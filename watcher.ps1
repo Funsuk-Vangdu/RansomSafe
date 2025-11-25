@@ -8,9 +8,9 @@ $BackupRepo = "s3:http://127.0.0.1:9000/ransomsafe-locked"
 $LogFile = "C:\RansomSafe\backup-log.txt"
 
 # Environment variables – required for Restic
-$env:RESTIC_PASSWORD = "MakeItStrongBro"
-$env:AWS_ACCESS_KEY_ID = "minioadmin"
-$env:AWS_SECRET_ACCESS_KEY = "minioadmin"
+$env:RESTIC_PASSWORD = "stored offline"
+$env:AWS_ACCESS_KEY_ID = "stored offline"
+$env:AWS_SECRET_ACCESS_KEY = "stored offline"
 
 # Debounce timer (prevents multiple backups per second)
 $CooldownSeconds = 20
@@ -53,3 +53,4 @@ Write-Host "Real-time backup watcher is now running."
 Write-Host "Do NOT close this window if you want continuous backups."
 Write-Host "Press Ctrl + C to stop."
 while ($true) { Start-Sleep 1 }
+
