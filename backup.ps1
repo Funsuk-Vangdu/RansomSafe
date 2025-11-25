@@ -1,9 +1,9 @@
 # === RansomSafe Automated Backup Script ===
 
 # Set necessary environment variables
-$env:RESTIC_PASSWORD = "MakeItStrongBro"
-$env:AWS_ACCESS_KEY_ID = "minioadmin"
-$env:AWS_SECRET_ACCESS_KEY = "minioadmin"
+$env:RESTIC_PASSWORD = "stored offline"
+$env:AWS_ACCESS_KEY_ID = "stored offline"
+$env:AWS_SECRET_ACCESS_KEY = "stored offline"
 
 # Path to backup
 $BackupPath = "C:\RansomSafe"
@@ -20,3 +20,4 @@ Write-Output "[$Time] Starting backup..."
 C:\RansomSafe\restic.exe -r $Repo backup $BackupPath
 
 Write-Output "[$Time] Backup complete."
+
